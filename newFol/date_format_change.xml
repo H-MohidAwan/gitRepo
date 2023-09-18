@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template>
+        <t>
+            <head>
+                <meta charset="UTF-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <script
+                  src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.js"
+                  integrity="sha512-K/oyQtMXpxI4+K0W7H25UopjM8pzq0yrVdFdG21Fh5dBe91I40pDd9A4lzNlHPHBIP2cwZuoxaUSX0GJSObvGA=="
+                  crossorigin="anonymous"
+                  referrerpolicy="no-referrer"
+                ></script>
+                <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/flatpickr.min.css"
+                  integrity="sha512-MQXduO8IQnJVq1qmySpN87QQkiR1bZHtorbJBD0tzy7/0U9+YIC93QWHeGTEoojMVHWWNkoCp8V6OzVSYrX0oQ=="
+                  crossorigin="anonymous"
+                  referrerpolicy="no-referrer"
+                />
+                <title>Change HTML Default Input Format</title>
+              </head>
+              <body>
+                <input type="date" id="dob_req" placeholder="Date : ( dd/ mm/ yyyy )" />
+            
+                <script>
+                  flatpickr("#dob_req", {
+                    dateFormat: "d/m/Y",
+                    monthSelectorType: "short",
+                    altInput: true,
+                    altFormat: "d - M - Y",
+                  });
+                </script>
+              </body>
+        </t>
+    </template>
+</odoo>
